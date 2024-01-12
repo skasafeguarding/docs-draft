@@ -1,5 +1,5 @@
 ---
-title: 'Code of Conduct for the National Team'
+title: Code of Conduct for the National Team
 author: Vivek Santayana
 ---
 
