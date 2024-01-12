@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# SKA Documents Hub (Beta)
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to the beta test for the Documents Hub for the Scottish Korfball Association.
+The Documents Hub is intended to be a searchable portal that hosts all governing documents, as well as relevant rules, regulations and procedures, of the SKA in an accessible format.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This is currently a beta test for the Documents Hub, and the documents hosted here are to be considered as drafts.
+They will not be in effect until formally adopted by the governing bodies of the SKA.

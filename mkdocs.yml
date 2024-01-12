@@ -1,10 +1,16 @@
 site_name: SKA Docs (Draft)
+repo_url: https://github.com/skasafeguarding/docs-draft
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
+    - navigation.path
     - navigation.sections
     - navigation.top
+    - navigation.indexes
+    - navigation.tracking
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -13,7 +19,10 @@ theme:
   language: en
 
 plugins:
-  - social
+  social:
+  mike:
+    alias_type: symlink
+  search:
 
 extra:
   social:
@@ -21,20 +30,48 @@ extra:
       link: https://github.com/Scotland-Korfball
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/ScotlandKorf
+  version:
+    provider: mike
+    default: latest
 
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - markdown.extensions.smarty
+  - meta
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
+  - pymdownx.snippets:
+      auto_append:
+        - includes/glossary.md
   - pymdownx.arithmatex:
       generic: true
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
-  - attr_list
 
 copyright: |
   &copy; 2023-<script>document.write(new Date().getFullYear())</script> <a href="https://scotlandkorfball.co.uk/"  target="_blank" rel="noopener">Scottish Korfball Association</a>.
+
+nav:
+  - Home:
+    - index.md
+    - SKA Home: http://www.scotlandkorfball.co.uk/
+  - Codes of Conduct:
+    - codes/index.md
+    - 1. Affiliated Clubs: codes/clubs.md
+    - 2. Senior Players: codes/senior-players.md
+    - 3. Junior Players: codes/junior-players.md
+    - 4. Coaches: codes/coaches.md
+    - 5. Officials and Referees: codes/officials.md
+    - 6. General Volunteers and Committee Members: codes/volunteers.md
+    - 7. Parents, Guardians, and/or Carers: codes/guardians.md
+    - 8. Spectators and Supporters: codes/spectators.md
+    - 'Appendix: the National Team': codes/national-team.md
+  - Safeguarding:
+    - safeguarding/index.md
+    - Safeguarding Framework: safeguarding/framework.md
