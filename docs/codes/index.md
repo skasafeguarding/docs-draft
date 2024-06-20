@@ -4,6 +4,10 @@ author: Vivek Santayana
 template: document.html
 ---
 
+!!! Note "Changelog"
+
+    For a summary of changes since the previous version, following feedback from member clubs, see the [changelog](./changelog.md).
+
 # Codes of Conduct
 
 ??? Info "Document Status"
