@@ -1,0 +1,12 @@
+body { counter-reset: h2count; }
+h2 {
+  counter-increment: h2count;
+  counter-reset: h3count;
+}
+h2::before {
+  content: counter(h2count) ". ";
+}
+h3 {counter-increment: h3count;}
+h3::before {
+  content: counter(h2count) "." counter(h3count) ". ";
+}
