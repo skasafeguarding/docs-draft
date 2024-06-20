@@ -22,5 +22,7 @@ jobs:
         run: |
           git config --global user.name "Docs Deploy"
           git config --global user.email "safeguarding@scotlandkorfball.co.uk"
+      - name: Mike Set Default
+        run: mike set-default latest --allow-undefined
       - name: Build Docs Website
         run: mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
